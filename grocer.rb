@@ -35,7 +35,9 @@ items = 	[
 		{"TEMPEH" => {:price => 3.00, :clearance => true}},
 		{"CHEESE" => {:price => 6.50, :clearance => false}},
 		{"BEER" => {:price => 13.00, :clearance => false}},
+    {"AVOCADO" => {:price => 3.00, :clearance => true}},
 		{"PEANUTBUTTER" => {:price => 3.00, :clearance => true}},
+    {"TEMPEH" => {:price => 3.00, :clearance => true}},
 		{"BEETS" => {:price => 2.50, :clearance => false}}
 	]
 
