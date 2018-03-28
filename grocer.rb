@@ -16,7 +16,7 @@ end
 def apply_coupons(cart, coupons)
   # code here
 
-  
+
 end
 
 def apply_clearance(cart)
@@ -47,4 +47,5 @@ coupons=
   		{:item => "CHEESE", :num => 3, :cost => 15.00}
   	]
 
-puts consolidate_cart(items)
+cart = consolidate_cart(items)
+puts apply_coupons(cart,coupons)
