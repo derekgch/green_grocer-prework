@@ -10,7 +10,6 @@ def consolidate_cart(cart)
       end #if
     end #list
   end#cart
-
   dens_cart
 end
 
