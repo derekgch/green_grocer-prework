@@ -53,8 +53,8 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons: [])
+  puts cart
   total = 0.00
-
   cart.each do |item, data|
     total = data[:price] * data[:count] + total
   end
