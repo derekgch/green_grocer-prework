@@ -1,8 +1,11 @@
 def consolidate_cart(cart)
   # code here
-  puts cart
+  dens_cart = []
+  cart.each do |list|
+    
+  puts 
 
-
+  
 end
 
 def apply_coupons(cart, coupons)
