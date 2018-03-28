@@ -16,8 +16,8 @@ end
 def apply_coupons(cart, coupons)
   # code here
   coupons.each do |data|
-    data[:item]
-    puts data[:num]
+    puts cart[data[:item]]
+    
   end #coupons
 
 
