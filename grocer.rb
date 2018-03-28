@@ -66,5 +66,5 @@ coupons=
   		{:item => "CHEESE", :num => 3, :cost => 15.00}
   	]
 
-cart = consolidate_cart(items)
-puts apply_coupons(cart,coupons)
+cart_1 = consolidate_cart(items)
+puts apply_coupons(cart_1,coupons)
