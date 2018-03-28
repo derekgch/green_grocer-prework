@@ -8,9 +8,7 @@ def consolidate_cart(cart)
       dens_cart[list.key] = list.merge(:count=>1)
     end
   end
-
-
-
+  dens_cart
 end
 
 def apply_coupons(cart, coupons)
