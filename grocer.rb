@@ -1,4 +1,4 @@
-def consolidate_cart(cart: [])
+def consolidate_cart(cart)
   # code here
   dens_cart = {}
   cart.each do |list|
