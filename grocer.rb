@@ -5,7 +5,8 @@ def consolidate_cart(cart)
     if(dens_cart.keys.include?(list.keys))
       dens_cart[list.keys][:count] +=1
     else
-      temp =list[value]
+      temp =list[value][0]
+      puts temp
       dens_cart[list.keys] = temp
     end
   end
