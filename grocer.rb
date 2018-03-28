@@ -13,7 +13,7 @@ def consolidate_cart(cart)
   dens_cart
 end
 
-#{"AVOCADO" => {:price => 3.00, :clearance => true}},
+#{"AVOCADO" => {:price => 3.00, :clearance => true,:count=2}},
 #{:item => "AVOCADO", :num => 2, :cost => 5.00},
 def apply_coupons(cart, coupons)
   # code here
@@ -25,6 +25,8 @@ def apply_coupons(cart, coupons)
         cart[data[:item]][:count] = cart[data[:item]][:count] % data[:num]
         n = cart[data[:item]][:count] / data[:num]
         temp = cart[data[:item]]
+        temp[:price] = data[:cost]
+        temp[:]
         puts temp
       end #if
     end #if
