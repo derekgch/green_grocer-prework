@@ -13,6 +13,7 @@ def consolidate_cart(cart)
   dens_cart
 end
 
+#{:item => "AVOCADO", :num => 2, :cost => 5.00},
 def apply_coupons(cart, coupons)
   # code here
 
