@@ -20,7 +20,6 @@ def apply_coupons(cart, coupons)
   coupons.each do |data|
     if(cart.has_key?(data[:item]))
       if (cart[data[:item]][:count] >= data[:num])
-
         cart[data[:item]][:count] = cart[data[:item]][:count] - data[:num]
         temp = cart[data[:item]]
         temp[:price] = data[:cost]
