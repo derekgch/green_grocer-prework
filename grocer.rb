@@ -43,8 +43,9 @@ end
 #{"AVOCADO" => {:price => 3.00, :clearance => true,:count=2}},
 def apply_clearance(cart)
   # code here
-  puts cart
+
   cart.each do |data|
+      puts data
     data.each do |k,v|
       puts v
       temp = v[:price] * 0.8
