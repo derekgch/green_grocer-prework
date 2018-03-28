@@ -59,7 +59,7 @@ def checkout(cart, coupons: [])
     total = data[:price] * data[:count] + total
   end
   total = (total*0.9).round(2) if total >100
-
+  total
   # code here
 end
 
