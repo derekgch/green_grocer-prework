@@ -88,5 +88,3 @@ coupons=
   		{:item => "CHEESE", :num => 3, :cost => 15.00},
       {:item => "AVOCADO", :num => 2, :cost => 5.00}
   	]
-
-
