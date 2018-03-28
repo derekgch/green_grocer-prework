@@ -17,6 +17,7 @@ end
 #{:item => "AVOCADO", :num => 2, :cost => 5.00},
 def apply_coupons(cart, coupons)
   # code here
+  puts cart
 
   coupons.each do |data|
     if(cart.has_key?(data[:item]))
