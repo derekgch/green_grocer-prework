@@ -22,7 +22,7 @@ def apply_coupons(cart, coupons)
       if (cart[data[:item]][:count] >= data[:num])
         t_name = "#{data[:item]} W/COUPON"
         puts cart[data[:item]]
-        cart[t_name] = {:price => 0.00, :clearance => true,:count=0}
+        cart[t_name] = {:price => 0.00, :clearance => true,:count=>0}
         puts cart[data[:item]] , data[:num]
         cart[t_name][:price] = data[:cost]
         cart[t_name][:count] = cart[data[:item]][:count] / data[:num]
