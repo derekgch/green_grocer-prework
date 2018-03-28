@@ -21,7 +21,8 @@ def apply_coupons(cart, coupons)
     if(cart.has_key?(data[:item]))
       if (cart[data[:item]][:count] >= data[:num])
         puts cart[data[:item]] , data[:num]
-        temp = cart[data[:item]].merge()
+        temp = {}
+        temp =cart[data[:item]
         temp[:price] = data[:cost]
         temp[:count] = cart[data[:item]][:count] / data[:num]
         t_name = "#{data[:item]} W/COUPON"
