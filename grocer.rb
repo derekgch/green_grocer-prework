@@ -21,6 +21,8 @@ def apply_coupons(cart, coupons)
     if(cart.has_key?(data[:item]))
       if (cart[data[:item]][:count] >= data[:num])
         t_name = "#{data[:item]} W/COUPON"
+        if(cart.has_key?(t_name))
+
         cart[t_name] = {:price => 0.00, :clearance => true,:count=>0}
         cart[t_name][:price] = data[:cost]
         cart[t_name][:clearance] = cart[data[:item]][:clearance]
