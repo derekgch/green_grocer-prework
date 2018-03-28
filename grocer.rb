@@ -3,7 +3,7 @@ def consolidate_cart(cart)
   dens_cart = {}
   cart.each do |list|
     list.each do |key,data|
-      puts dens_cart.keys.include?(key)
+      puts dens_cart.keys , key
       if(dens_cart.keys.include?(key))
         dens_cart[key][:count] +=1
       else
