@@ -39,10 +39,16 @@ def apply_coupons(cart, coupons)
   cart
 end
 
+
+#{"AVOCADO" => {:price => 3.00, :clearance => true,:count=2}},
 def apply_clearance(cart)
   # code here
-
-  
+  cart.each do |data|
+    data.each do |k,v|
+      v[:price] = v[:price]*.8 if(v[:clearance] == true)
+    end
+  end
+  cart
 end
 
 def checkout(cart, coupons)
