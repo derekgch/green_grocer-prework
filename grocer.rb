@@ -5,7 +5,7 @@ def consolidate_cart(cart)
     if(dens_cart.keys.include?(list.keys))
       dens_cart[list.keys][:count] +=1
     else
-      dens_cart[list.keys] = list[list.keys].merge(:count=>1)
+      dens_cart[list.keys] = list.values.merge(:count=>1)
     end
   end
 
