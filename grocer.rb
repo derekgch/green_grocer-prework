@@ -85,4 +85,4 @@ coupons=
 
 cart_1 = consolidate_cart(items)
 cart_1 = apply_coupons(cart_1,coupons)
-cart_1 = apply_clearance(cart_1)
+puts apply_clearance(cart_1)
