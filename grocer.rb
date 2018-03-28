@@ -8,6 +8,7 @@ def consolidate_cart(cart)
       dens_cart[list.keys] = list.merge(:count=>1)
     end
   end
+  puts dens_cart
   dens_cart
 end
 
