@@ -24,7 +24,7 @@ def apply_coupons(cart, coupons)
 
       if (cart[data[:item]][:count] >= data[:num])
         n = cart[data[:item]][:count] / data[:num]
-        cart[data[:item]][:count] = cart[data[:item]][:count] % data[:num]        
+        cart[data[:item]][:count] = cart[data[:item]][:count] % data[:num]
         temp = cart[data[:item]]
         temp[:price] = data[:cost]
         temp[:count] = n
@@ -66,5 +66,5 @@ coupons=
   		{:item => "CHEESE", :num => 3, :cost => 15.00}
   	]
 
-cart_1 = consolidate_cart(items)
-puts apply_coupons(cart_1,coupons)
+# cart_1 = consolidate_cart(items)
+# puts apply_coupons(cart_1,coupons)
