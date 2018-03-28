@@ -45,11 +45,9 @@ def apply_clearance(cart)
   # code here
 
   cart.each do |data|
-      puts data
-    data.each do |k,v|
-      puts v
-      temp = v[:price] * 0.8
-      v[:price] = temp if(v[:clearance] == true)
+      puts data  
+      temp = data[:price] * 0.8
+      data[:price] = temp if(data[:clearance] == true)
     end
   end
   cart
