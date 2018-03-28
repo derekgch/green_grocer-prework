@@ -36,4 +36,4 @@ items = 	[
 		{"BEETS" => {:price => 2.50, :clearance => false}}
 	]
 
-consolidate_cart(items)
+puts consolidate_cart(items)
