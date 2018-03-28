@@ -2,6 +2,7 @@ def consolidate_cart(cart)
   # code here
   dens_cart = {}
   cart.each do |list|
+    dens_cart[list.key] = list.merge(:count=>1)
 
   puts
 
