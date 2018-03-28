@@ -18,7 +18,7 @@ def apply_coupons(cart, coupons)
 
   coupons.each do |data|
     if(cart.has_key?(data[:item]))
-      puts cart[data[:item]][:count] , data[:count]
+      puts cart[data[:item]][:count] , #data[:count]
       if (cart[data[:item]][:count] >= data[:count])
         cart[data[:item]][:count] = cart[data[:item]][:count] % data[:count]
         n = cart[data[:item]][:count] / data[:count]
