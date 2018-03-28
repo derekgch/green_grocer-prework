@@ -20,7 +20,8 @@ def apply_coupons(cart, coupons)
     if (cart[data[:item]][:count] >= data[:count])
       cart[data[:item]][:count] = cart[data[:item]][:count] % data[:count]
       n = cart[data[:item]][:count] / data[:count]
-      temp = 
+      temp = cart[data[:item]]
+      puts temp
     end #if
   end #coupons
 
