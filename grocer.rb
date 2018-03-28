@@ -2,7 +2,11 @@ def consolidate_cart(cart)
   # code here
   dens_cart = {}
   cart.each do |list|
-    dens_cart[list.key] = list.merge(:count=>1)
+    if(dens_cart.keys.include?(list.key))
+      dens_cart[list.key][:count] +=1
+    else
+      dens_cart[list.key] = list.merge(:count=>1)
+    end
 
   puts
 
