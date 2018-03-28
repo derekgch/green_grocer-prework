@@ -55,8 +55,8 @@ end
 def checkout(cart, [])
   puts cart
   total = 0.00
-  cart = consolidate_cart(cart)
-  cart.each do |item, data|
+  cart1 = consolidate_cart(cart)
+  cart1.each do |item, data|
     total = data[:price] * data[:count] + total
   end
   total = (total*0.9).round(2) if total >100
