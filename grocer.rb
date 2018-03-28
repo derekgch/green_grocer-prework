@@ -15,9 +15,13 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-  
+
   coupons.each do |data|
-    puts cart[data[:item]]
+    n = 0
+    if (cart[data[:item]][:count] >= data[:count])
+      cart[data[:item]][:count] = cart[data[:item]][:count] -data[:count]
+
+    end #if
   end #coupons
 
   cart
